@@ -2,7 +2,7 @@
 def reverse_each_word(sentence)
   array = []
   #sentence_split = sentence.split
-  sentence.split.each do |word|
+  sentence.split.collect do |word|
     #binding.pry
     array << "#{word.reverse}"
   end
